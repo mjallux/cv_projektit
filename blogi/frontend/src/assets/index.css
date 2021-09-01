@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, p {
+    @apply text-white font-sans tracking-widest
+  }
+  h2 {
+    @apply text-white font-sans tracking-widest text-sm
+  }
+  p {
+    @apply text-sm tracking-wide font-sans
+  }
+}
+
+@layer utilities {
+  .text-indent-sm {
+    text-indent: 0.75rem;
+  }
+  .text-indent-xs {
+    text-indent: 0.5rem;
+  }
+  .indent-sm {
+      margin-left: 0.75rem;
+  }
+  .text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  .text-noselect {
+      user-select: none;
+  }
+}
